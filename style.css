@@ -1,3 +1,34 @@
-* {
-    background: darkcyan;
+:root {
+    --white: white;
+    --black: #061511;
+    --background: #FFA068;
+    --button: #06D6A0;
+    --highlight: #2EC7DC;
+  }
+
+@font-face {
+font-family: 'texte';
+src: url(/assets/fonts/Tomorrow/Tomorrow-Regular.ttf);
+}
+@font-face {
+font-family: 'titre-texte';
+src: url(/assets/fonts/Tomorrow/Tomorrow-Bold.ttf);
+}
+@font-face {
+font-family:'titres';
+src: url(/assets/fonts/Jost/Jost-VariableFont_wght.ttf);
+}
+  
+body {
+background: var(--background);
+margin: 0 auto;
+color: var(--black);
+}
+
+#qualirepar {
+    max-width: 15vw;
+}
+
+.ranges img {
+    max-height: 40vh;
 }
