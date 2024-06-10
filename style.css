@@ -4,6 +4,8 @@
     --background: #FFA068;
     --button: #06D6A0;
     --highlight: #2EC7DC;
+    --navbar: #FFBD95;
+    --range: #FFD0B5;
   }
 
 @font-face {
@@ -23,6 +25,68 @@ body {
 background: var(--background);
 margin: 0 auto;
 color: var(--black);
+font-family: texte, sans-serif;
+max-width: 1440px;
+}
+
+button {
+    background: var(--button);
+    border-radius: 5px;
+    border: none;
+    font-family: texte;
+    font-weight: bold;
+    padding: 10px 50px;
+    max-height: 2.4rem;
+
+}
+
+header {
+    background: var(--navbar);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1rem;
+    max-height: 10vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 7px;
+    font-size: 1.1rem;
+}
+
+.img-container {
+    background: var(--white);
+    margin: 3px;
+}
+
+.img-container img {
+    max-height: 7vh;
+}
+
+nav {
+    flex: 2;
+    max-width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+nav i {
+    padding: 20px 10px;
+}
+
+nav p:nth-child(3) {
+    display: flex;
+    justify-content: var(--white);
+    align-items: center;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 0 10px;
+    max-height: 2.3rem;
 }
 
 #qualirepar {
