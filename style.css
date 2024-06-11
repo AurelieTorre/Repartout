@@ -38,9 +38,9 @@ button {
     border-radius: 5px;
     border: none;
     font-family: titre-texte;
-    padding: 10px 50px;
-    max-height: 2.4rem;
-    max-width: 10rem;
+    padding: 10px 40px;
+    height: 2.5rem;
+    max-width: 12rem;
 
 }
 
@@ -219,6 +219,7 @@ h2 {
     width: 50vh;
     background: var(--white);
     margin: 40px;
+    border-radius: 5px;
 }
 
 .img-container img {
@@ -458,10 +459,71 @@ h3 .bold {
 
 /*** nos services ***/
 
+.services {
+    background: #DAF0FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+}
 
+.services h2 {
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 3vw;
+}
+
+.card {
+    background: var(--button);
+    border-radius: 15px;
+    padding: 30px;
+    width: 20vw;
+    margin-bottom: 15vh;
+}
 
 /*** localisation ***/
 
+.localisation h4 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
 
+.localisation img {
+    border-radius: 15px;
+    width: 80vw;
+}
+
+.map-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.map-container p {
+    border: 1px solid var(--background);
+    background-color: rgba(24, 60, 251, 0.16);
+    border-radius: 5px;
+    text-align: center;
+    width: 15rem;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map-container .fa-solid {
+    color: var(--background);
+    margin-left: 20px;
+}
+
+.infos {
+    margin: 6vh 0 8vh 7vw;
+}
 
 /****** footer ******/
