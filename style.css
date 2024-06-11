@@ -40,6 +40,7 @@ button {
     font-family: titre-texte;
     padding: 10px 50px;
     max-height: 2.4rem;
+    max-width: 10rem;
 
 }
 
@@ -61,15 +62,6 @@ header {
     font-weight: bold;
     gap: 7px;
     font-size: 1.1rem;
-}
-
-.img-container {
-    background: var(--white);
-    margin: 3px;
-}
-
-.img-container img {
-    max-height: 7vh;
 }
 
 nav {
@@ -98,13 +90,18 @@ nav p:nth-child(3) {
 /****** hero ******/
 
 .hero {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    justify-content: center;
-    gap: 2vw;
-    padding: 60px 35px;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    padding: 60px 40px;
     max-width: 100vw;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h1 {
@@ -129,11 +126,18 @@ h1 {
     display: flex;
     text-align: left;
     margin: 30px;
+    max-width: 40vw;
 }
 
 .quali-left p {
     margin: 10px auto;
     min-width: 50%;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding: 0 0 10px;
 }
 
 #qualirepar {
@@ -143,40 +147,246 @@ h1 {
 }
 
 .hero-right img {
-    border-radius: 10px;
-    margin-left: 0;
-    height: 47vh;
-}
-
-.hero:after {
-    content: url(/assets/img/robert.png);
-    position: absolute;
-    bottom: -110px;
-    right: -32px;
-    height: 42vh;
+    height: 65vh;
 }
 
 /*** les chiffres ***/
+
 .stats {
     background: var(--highlight);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-family: titres;
+    font-weight:500;
 }
 
+.choc {
+    font-size: 3rem;
+}
+
+.up {
+    transform: rotate(-18deg);
+
+}
+
+.down {
+    transform: rotate(15deg);
+}
+
+.up, .down{
+    text-align:center;
+}
+
+.stabilo {
+    background-color: var(--button);
+    height: 15vh;
+    width: 25vw;
+    transform: rotate(5deg);
+}
+
+.stabilo:nth-of-type(2) {
+    transform: rotate(-6deg);
+}
 
 /****** gammes ******/
 
-.ranges img {
-    max-height: 40vh;
+.ranges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--range);
 }
+
+h2 {
+    font-family: titres;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 50px;
+}
+
+.range-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+    background: var(--white);
+    margin: 40px;
+}
+
+.img-container img {
+    height: 48vh;
+}
+
+ .big img {
+    height: 40vh;
+ }
+
+ .middle .stabilo {
+    transform: rotate(5deg);
+ }
+
+ .range-container .stabilo {
+    background: var(--highlight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+ }
+
+ h3 {
+    font-family: 'titres';
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 10px;
+ }
+
+h3 .bold {
+    font-weight: bolder;
+    font-size: 2.3rem;
+ }
+
+ #gros, #petit {
+    transform: rotate(6deg);
+ }
+
+ #moyen {
+    transform: rotate(-5deg);
+ }
 
 /*** logos de marques***/
 
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding: 20px;
+    background: #B2F2E2;
+}
 
+.icon {
+    font-size: 3rem;
+    padding: 30px;
+}
+
+.logos-container {
+    width: 15vw;
+    height: 5vw;
+    display: flex;
+    background: var(--white);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.logos-container img {
+    max-width: 10vw;
+}
 
 /****** avis ******/
 
+.advices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
 
+.advices h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.advice-container {
+    display: flex;
+    max-width: 80vw;
+}
+
+.advice-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    width: 45vw;
+}
+
+.advice-left img {
+    width: 45vw;
+}
+
+.advice-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 280px;
+    padding: 30px 0;
+}
+
+.icon-circle {
+    height: 34px;
+    width: 34px;
+    border-radius: 50px;
+    background: var(--white);
+}
+
+.icon-circle .fa-solid {
+    color: var(--background);
+    transform: translate(120%, 50%);
+}
+
+.small-circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background: #112A46;
+}
+
+.advice-right {
+    background: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 35px;
+    margin: 0 12px 0 -8vw;
+    position: relative;
+}
+
+.advice-right p {
+    margin: 15px 0 40px;
+    width: 40vw;
+}
+
+#signature {
+    font-weight: 900;
+    color: var(--background);
+    margin-bottom: 7px;
+}
+
+.advice-right::after {
+    content: "";
+    position: absolute;
+    background: var(--background);
+    height: 2px;
+    width: 88%;
+    bottom: 16%;
+    left: 6%;
+}
 
 /*** manifeste ***/
+
+.manifest {
+    background: #FFF5D0;
+}
 
 
 
