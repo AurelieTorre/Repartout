@@ -386,9 +386,75 @@ h3 .bold {
 
 .manifest {
     background: #FFF5D0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+.manifest-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 50px;
+    gap: 5vw;
+}
 
+.manifest-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45vw;
+}
+
+.manifest-left h2 {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.manifest-left button {
+    max-width: 20rem;
+    padding: 10px;
+    align-self: center;
+    margin: 15px;
+}
+
+.why {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.why p {
+    margin: 15px 0;
+}
+
+.manifest-right img {
+    margin-top: 30px;
+    width: 45vw;
+}
+
+.remind {
+    background: var(--navbar);
+    height: 23vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.remind-stabilo {
+    background: var(--highlight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 20vh;
+    transform: rotate(-5deg);
+}
+
+.remind-stabilo h3 {
+    transform: rotate(5deg);
+}
 
 /*** nos services ***/
 
