@@ -36,12 +36,17 @@ max-width: 1440px;
 button {
     background: var(--button);
     border-radius: 5px;
-    border: none;
+    border: 1px solid transparent;
     font-family: titre-texte;
     padding: 10px 40px;
     height: 2.5rem;
-    max-width: 12rem;
+    max-width: 13rem;
+}
 
+button:hover {
+    background: var(--navbar);
+    border: 1px solid var(--button);
+    cursor: pointer;
 }
 
 /*** barre du haut ***/
@@ -85,6 +90,11 @@ nav p:nth-child(3) {
     border-radius: 5px;
     padding: 0 10px;
     max-height: 2.3rem;
+}
+
+nav p:nth-child(3):hover {
+    color: var(--highlight);
+    border-color: var(--highlight);
 }
 
 /****** hero ******/
@@ -279,6 +289,10 @@ h3 .bold {
     padding: 30px;
 }
 
+.icon:hover {
+    color: var(--navbar);
+}
+
 .logos-container {
     width: 15vw;
     height: 5vw;
@@ -291,6 +305,7 @@ h3 .bold {
 
 .logos-container img {
     max-width: 10vw;
+    border-radius: 15px;
 }
 
 /****** avis ******/
@@ -339,6 +354,10 @@ h3 .bold {
     background: var(--white);
 }
 
+.icon-circle:hover {
+    background: var(--button);
+}
+
 .icon-circle .fa-solid {
     color: var(--background);
     transform: translate(120%, 50%);
@@ -349,6 +368,10 @@ h3 .bold {
     width: 16px;
     border-radius: 50px;
     background: #112A46;
+}
+
+.small-circle:hover {
+    background: var(--button);
 }
 
 .advice-right {
@@ -486,6 +509,15 @@ h3 .bold {
     margin-bottom: 15vh;
 }
 
+.card a {
+    text-decoration: none;
+    color: #275488;
+}
+
+.card a:hover {
+    color: var(--white);
+}
+
 /*** localisation ***/
 
 .localisation h4 {
@@ -517,9 +549,19 @@ h3 .bold {
     transform: translate(-50%, -50%);
 }
 
+.map-container p:hover {
+    border-color: #275488;
+    color: transparent
+}
+
 .map-container .fa-solid {
     color: var(--background);
     margin-left: 20px;
+}
+
+.map-container .fa-solid:hover {
+    color: #275488;
+    cursor: pointer;
 }
 
 .infos {
@@ -527,3 +569,29 @@ h3 .bold {
 }
 
 /****** footer ******/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh;
+}
+
+footer h4 {
+    color: var(--button);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--black);
+    margin: 10px;
+}
+
+footer a:hover {
+    color: var(--highlight);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
