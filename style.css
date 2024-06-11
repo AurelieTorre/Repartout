@@ -99,7 +99,7 @@ nav p:nth-child(3) {
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     justify-content: center;
     gap: 2vw;
     padding: 60px 35px;
@@ -145,6 +145,7 @@ h1 {
 .hero-right img {
     border-radius: 10px;
     margin-left: 0;
+    height: 47vh;
 }
 
 .hero:after {
@@ -152,6 +153,7 @@ h1 {
     position: absolute;
     bottom: -110px;
     right: -32px;
+    height: 42vh;
 }
 
 /*** les chiffres ***/
@@ -165,3 +167,25 @@ h1 {
 .ranges img {
     max-height: 40vh;
 }
+
+/*** logos de marques***/
+
+
+
+/****** avis ******/
+
+
+
+/*** manifeste ***/
+
+
+
+/*** nos services ***/
+
+
+
+/*** localisation ***/
+
+
+
+/****** footer ******/
