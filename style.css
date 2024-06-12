@@ -21,6 +21,11 @@ font-family:'titres';
 src: url(/assets/fonts/Jost/Jost-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: 'autre';
+    src: url(/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
 }
@@ -56,8 +61,14 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    font-family: titres, sans-serif;
     font-size: 1rem;
     max-height: 10vh;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    width: 97vw;
+    z-index: 10;
 }
 
 .logo {
@@ -82,6 +93,15 @@ nav i {
     padding: 20px 10px;
 }
 
+nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+nav a:hover {
+    color: var(--highlight);
+}
+
 nav p:nth-child(3) {
     display: flex;
     justify-content: var(--white);
@@ -97,7 +117,15 @@ nav p:nth-child(3):hover {
     border-color: var(--highlight);
 }
 
+nav button:hover {
+    background: var(--background);
+}
+
 /****** hero ******/
+
+main {
+    margin-top: 15vh;
+}
 
 .hero {
     display: flex;
@@ -115,8 +143,8 @@ nav p:nth-child(3):hover {
 }
 
 h1 {
-    font-family: titres;
-    font-weight: bolder;
+    font-family: autre;
+    font-weight: 500;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
@@ -370,9 +398,10 @@ h3 .bold {
     background: #112A46;
 }
 
-.small-circle:hover {
+.small-circle.active {
     background: var(--button);
 }
+
 
 .advice-right {
     background: var(--white);

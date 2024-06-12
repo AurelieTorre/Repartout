@@ -11,14 +11,14 @@
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
             <img src="/assets/img/logo-blanc.png" alt="logo clé à molette">          
             Réparer’tou
         </div>
         <nav>
-            <p>Faire réparer</p>
-            <p>Tout sur Réparer’tou</p>
+            <p><a href="#fix">Faire réparer</a></p>
+            <p><a href="#manifest">Tout sur Réparer’tou</a></p>
             <p><i class="fa-solid fa-magnifying-glass"></i> Que recherchez-vous ?</p>
             <button>Contactez-nous</button>
         </nav>
@@ -35,7 +35,7 @@
             <div class="quali">
                 <div class="quali-left">
                     <h4>On est officiellement certifié QualiRépar</h4>
-                    <p>Bénéficiez d’une aide de -20€ à -50€ sur votre réparation. <a href="#">+ d’infos</a></p>
+                    <p>Bénéficiez d’une aide de -20€ à -50€ sur votre réparation. <a href="https://www.label-qualirepar.fr">+ d’infos</a></p>
                 </div>
                 <img src="/assets/img/label.png" id="qualirepar" alt="label Qualirepar">
         </div>
@@ -59,7 +59,7 @@
     </div>
 
 <!-- les gammes d’électroménager -->
-    <section class="ranges">
+    <section class="ranges" id="fix">
         <h2>Que souhaitez-vous réparer ?</h2>
         <div class="range-container">
             <div class="big">
@@ -113,7 +113,7 @@
             <div class="advice-left">
                 <img src="/assets/img/femme aspi.png" alt="femme heureuse passant l’aspirateur">
                 <div class="advice-nav">
-                    <div class="icon-circle">
+                    <div class="icon-circle" id="left-arrow">
                         <i class="fa-solid fa-chevron-left"></i>
                     </div>
                     <div class="small-circle"></div>
@@ -122,7 +122,7 @@
                     <div class="small-circle"></div>
                     <div class="small-circle"></div>
                     <div class="small-circle"></div>
-                    <div class="icon-circle">
+                    <div class="icon-circle" id="right-arrow">
                         <i class="fa-solid fa-chevron-right"></i>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
         </div>
     </section>
 
-<section class="manifest">
+<section class="manifest" id="manifest">
     <div class="manifest-box">
         <div class="manifest-left">
             <h2>Pourquoi réparer’tou ?</h2>
@@ -188,7 +188,7 @@
         <h4>Retrouvez-nous dans la boutique</h4>
         <div class="map-container">
             <img src="/assets/img/carte-quartier.png" alt="plan du quartier">
-            <p>Saisissez votre adresse <i class="fa-solid fa-location-pin"></i></p>
+            <p id="location">Saisissez votre adresse <i class="fa-solid fa-location-pin"></i></p>
         </div>
     </div>
     <div class="infos">
