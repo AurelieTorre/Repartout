@@ -69,5 +69,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 nextCircle.style.background = "#06D6A0";
             }
         }
-    });    
+    });
+
+
+    // map management
+
+    const go = document.getElementById("location");
+    go.addEventListener("click", function() {
+        window.location.href = "./pages/map/map.html"
+    })
+    
 });
