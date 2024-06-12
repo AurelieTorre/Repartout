@@ -10,20 +10,20 @@
 
 @font-face {
 font-family: 'texte';
-src: url(/assets/fonts/Tomorrow/Tomorrow-Regular.ttf);
+src: url(/fonts/Tomorrow/Tomorrow-Regular.ttf);
 }
 @font-face {
 font-family: 'titre-texte';
-src: url(/assets/fonts/Tomorrow/Tomorrow-Bold.ttf);
+src: url(/fonts/Tomorrow/Tomorrow-Bold.ttf);
 }
 @font-face {
 font-family:'titres';
-src: url(/assets/fonts/Jost/Jost-VariableFont_wght.ttf);
+src: url(/fonts/Jost/Jost-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: 'autre';
-    src: url(/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 * {
