@@ -10,20 +10,20 @@
 
 @font-face {
 font-family: 'texte';
-src: url(/fonts/Tomorrow/Tomorrow-Regular.ttf);
+src: url(/Tomorrow/Tomorrow-Regular.ttf);
 }
 @font-face {
 font-family: 'titre-texte';
-src: url(/fonts/Tomorrow/Tomorrow-Bold.ttf);
+src: url(/Tomorrow/Tomorrow-Bold.ttf);
 }
 @font-face {
 font-family:'titres';
-src: url(/fonts/Jost/Jost-VariableFont_wght.ttf);
+src: url(/Jost/Jost-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: 'autre';
-    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    src: url(/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 * {
@@ -173,6 +173,7 @@ h1 {
 }
 
 h4 {
+    font-family: titre-texte;
     font-size: 1.1rem;
     font-weight: 900;
     padding: 0 0 10px;
