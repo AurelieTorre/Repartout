@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="mapstyle.css">
     <!-- Style pour les icônes font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
 </head>
 <body>
     <header id="header">
@@ -28,8 +29,32 @@
         <p id="location">Entrez votre adresse pour afficher la carte :</p>
         <input type="text" id="address" placeholder="Entrez votre adresse">
         <button onclick="showMap()">Afficher la carte</button>
-    
+
         <div id="map" style="height: 400px; width: 100%; display: none;"></div>
     </main>
+
+    <footer>
+        <div class="links">
+            <h4>Faire réparer</h4>
+            <a href="">Petit électroménager</a>
+            <a href="">Moyen électroménager</a>
+            <a href="">Gros électroménager</a>
+            <a href="">Tutos de réparation</a>
+        </div>
+        <div class="links">
+            <h4>Réparer’tou</h4>
+            <a href="">Manifeste</a>
+            <a href="">Certification QualiRepar</a>
+            <a href="">FAQ</a>
+            <a href="">CGU</a>
+            <a href="">RGPD</a>
+        </div>
+        <div class="links">
+            <h4>Nous suivre</h4>
+            <a href="">Contact</a>
+            <a href="">Youtube</a>
+            <a href="">LinkedIn</a>
+        </div>
+    </footer>
 </body>
 </html>
