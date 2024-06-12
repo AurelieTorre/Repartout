@@ -69,5 +69,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 nextCircle.style.background = "#06D6A0";
             }
         }
-    });
+    });    
 });
