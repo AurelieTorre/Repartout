@@ -39,6 +39,10 @@ font-weight: 500;
 max-width: 1440px;
 }
 
+.first-hide {
+    display: none;
+}
+
 button {
     background: var(--highlight);
     color: var(--button);
@@ -68,34 +72,34 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 85vw;
+    width: 83vw;
     height: 20vh;
     font-family: titres, sans-serif;
     font-size: 1rem;
     color: var(--highlight);
 }
 
-nav img {
-    width: 20vw;
+nav > img {
+    width: 19vw;
 }
 
-nav i {
+nav > p> i {
     padding: 20px 10px;
 }
 
-nav a {
+nav > p > a {
     text-decoration: none;
     color: var(--highlight);
 }
 
-nav a:hover {
+nav > p> a:hover {
     color: var(--button);
 }
 
-nav p:nth-child(4) {
+nav > p:nth-child(4) {
     display: flex;
     justify-content: var(--white);
     align-items: center;
@@ -105,12 +109,12 @@ nav p:nth-child(4) {
     max-height: 2.9rem;
 }
 
-nav p:nth-child(4):hover {
+nav > p:nth-child(4):hover {
     color: var(--button);
     border-color: var(--button);
 }
 
-nav button:hover {
+nav > button:hover {
     background: var(--background);
 }
 
@@ -163,7 +167,7 @@ h1 {
     width: 35vw;
 }
 
-.quali-left p {
+.quali-left > p {
     margin: 10px auto;
 }
 
@@ -186,7 +190,7 @@ h4 {
     align-items: center;
 }
 
-.hero-right img {
+.hero-right > img {
     width: 38.5vw;
 }
 
@@ -228,7 +232,7 @@ h4 {
 }
 
 .stabilo:nth-of-type(2) {
-    transform: rotate(-6deg);
+    transform: rotate(-5deg);
 }
 
 /****** gammes ******/
@@ -268,7 +272,7 @@ h2 {
     height: 48vh;
 }
 
- .big img {
+ .big > img {
     height: 40vh;
  }
 
@@ -333,7 +337,7 @@ h2 {
     border-radius: 50px;
 }
 
-.logos-container img {
+.logos-container > img {
     max-width: 10vw;
     border-radius: 15px;
 }
@@ -347,7 +351,7 @@ h2 {
     margin: 35px auto;
 }
 
-.advices h2 {
+.advices > h2 {
     font-size: 2.8rem;
     font-weight: 900;
     margin-bottom: 30px;
@@ -367,7 +371,7 @@ h2 {
     width: 40vw;
 }
 
-.advice-left img {
+.advice-left > img {
     width: 40vw;
 }
 
@@ -466,7 +470,7 @@ h2 {
     transform: rotate(-5deg);
 }
 
-.remind-stabilo h3 {
+.remind-stabilo > h3 {
     color: var(--highlight);
     font-family: autre;
     font-size: 2.5rem;
@@ -498,13 +502,13 @@ h2 {
     width: 45vw;
 }
 
-.manifest-left h2 {
+.manifest-left > h2 {
     font-size: 1.875rem;
     padding: 0;
     margin-bottom: 30px;
 }
 
-.manifest-left button {
+.manifest-left > button {
     max-width: 20rem;
     max-height: 2rem;
     margin: 30px 0;
@@ -516,12 +520,12 @@ h2 {
     justify-content: space-around;
 }
 
-.why p {
+.why > p {
     margin: 10px auto;
     font-size: 1.1rem;
 }
 
-.manifest-right img {
+.manifest-right > img {
     margin-top: 30px;
     width: 38vw;
 }
@@ -537,7 +541,7 @@ h2 {
     width: 100%;
 }
 
-.services h2 {
+.services > h2 {
     text-align: center;
 }
 
@@ -555,7 +559,7 @@ h2 {
     width: 17vw;
 }
 
-.card h4 {
+.card > h4 {
     color: var(--button);
     font-weight: bold;
     font-size: 1.1rem;
@@ -577,7 +581,7 @@ h2 {
     width: 85vw;
 }
 
-.localisation h4 {
+.localisation > h4 {
     margin: 10vh 0 5vh;
     font-family: titres;
     font-weight: bold;
@@ -595,7 +599,7 @@ h2 {
     justify-content: center;
 }
 
-.map-container p {
+.map-container > p {
     border: 1px solid var(--background);
     background-color: rgba(24, 60, 251, 0.10);
     border-radius: 5px;
@@ -608,7 +612,7 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
-.map-container p:hover {
+.map-container > p:hover {
     border-color: #275488;
     color: transparent
 }
@@ -662,4 +666,144 @@ footer a:hover {
 
 #follow {
     width: 12vw;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    .to-hide {
+        display: none;
+    }
+
+    .first-hide {
+        display: block;
+    }
+
+    /*** barre de navigation ***/
+
+    nav {
+        width: 90vw;
+        padding: 5px 15px 1px;
+    }
+
+    nav > img {
+        width: 38vw;
+        padding-top: 5px;
+    }
+
+    #search {
+        font-size: 1.2rem;
+        padding: 7px 20px 7px 0px;
+    }
+
+    #search > i {
+        margin: 20px;
+    }
+
+    .burger {
+        background: var(--navbar);
+        color: var(--black);
+    }
+
+    .burger i {
+        font-size: 3rem;
+    }
+
+    /****** hero ******/
+
+    main {
+        margin-top: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .hero-title {
+        width: 40vw;
+        margin: 0 auto;
+        text-shadow: 0px 4px 4px #b35d2f;
+        padding-bottom: 5vw;
+    }
+
+    .hero-text {
+        gap: 2vw;
+    }
+
+    .hero-text > button {
+        order: -1;
+        margin: 0 auto;
+        width: 28vw;
+    }
+
+    .hero-text > p {
+        margin: 1vw auto 4vw;
+        font-size: 1.1rem;
+    }
+
+    .hero-text > img {
+        width: 75vw;
+        margin: 0 auto;
+    }
+
+    .quali {
+        width: 100vw;
+        margin: auto;
+        padding: 30px 10px 10px 80px;
+        border-radius: 0;
+    }
+
+    .quali a {
+        color: var(--black);
+    }
+
+    #qualirepar {
+        width: 18vw;
+        height: 10vw;
+        margin: 0 30px 0 20px;
+        padding-bottom: 9px;
+    }
+
+    /*** les chiffres ***/
+
+    .stats {
+        justify-content: center;
+    }
+
+    .stabilo {
+        width: 42.5vw;
+        height: 10vw;
+    }
+    
+    /****** gammes ******/
+
+    .ranges {
+        background: var(--background);
+    }
+
+    .range-container {
+        flex-direction: column;
+    }
+
+    .img-container {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 0;
+    }
+
+    #oven {
+        width: 90%;
+        height: 90%;
+    }
+
+    #vacuum {
+        width: 78%;
+        height: 100%;
+    }
+
+    .range-container .stabilo {
+        width: 45vw;
+        height: 14vw;
+    }
+
 }
