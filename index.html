@@ -12,11 +12,8 @@
 </head>
 <body>
     <header id="header">
-        <div class="logo">
-            <img src="./assets/img/logo-blanc.png" alt="logo clé à molette">          
-            Réparer’tou
-        </div>
         <nav>
+            <img src="./assets/img/logo-reparertou.png" alt="logo clé à molette">
             <p><a href="#fix">Faire réparer</a></p>
             <p><a href="#manifest">Tout sur Réparer’tou</a></p>
             <p><i class="fa-solid fa-magnifying-glass"></i> Que recherchez-vous ?</p>
@@ -29,19 +26,23 @@
 <!-- le hero -->
     <section class="hero">
         <div class="hero-left">
-            <h1>C’est cassé !<br>Nous le réparons</h1>
-            <p>C’est moins cher et plus écologique</p>
-            <button>Contactez-nous</button>
-            <div class="quali">
-                <div class="quali-left">
-                    <h4>On est officiellement certifié QualiRépar</h4>
-                    <p>Bénéficiez d’une aide de -20€ à -50€ sur votre réparation. <a href="https://www.label-qualirepar.fr">+ d’infos</a></p>
-                </div>
-                <img src="./assets/img/label.png" id="qualirepar" alt="label Qualirepar">
-        </div>
+            <div class="hero-title">
+                <h1>Cassé ?<br>Nous le réparons</h1>
             </div>
+            <div class="hero-text">
+                <p>C’est moins cher et plus écologique</p>
+                <button>Contactez-nous</button>
+                 <div class="quali">
+                    <div class="quali-left">
+                        <h4>On est officiellement certifié QualiRépar</h4>
+                        <p>Bénéficiez d’une aide de -20€ à -50€ sur votre réparation. <a href="https://www.label-qualirepar.fr">+ d’infos</a></p>
+                    </div>
+                    <img src="./assets/img/label.png" id="qualirepar" alt="label Qualirepar">
+                </div>
+            </div>
+        </div>
         <div class="hero-right">
-            <img src="./assets/img/robert et atelier.png" alt="Robert devant son atelier">
+            <img src="./assets/img/robert-atelier-carre.png" alt="Robert devant son atelier">
         </div>
     </section>
 
@@ -67,7 +68,7 @@
                     <img src="./assets/img/four.webp" alt="gros électroménager">
                 </div>
                 <div class="stabilo">
-                    <h3 id="gros"><span class="bold">Gros</span> électroménager</h3>
+                    <h3 id="gros"><span class="choc">Gros</span> électroménager</h3>
                 </div>
             </div>
             <div class="middle">
@@ -75,7 +76,7 @@
                     <img src="./assets/img/aspirateur.jpg" alt="moyen électroménager">
                 </div>
                 <div class="stabilo">
-                    <h3 id="moyen"><span class="bold">Moyen</span> électroménager</h3>
+                    <h3 id="moyen"><span class="choc">Moyen</span> électroménager</h3>
                 </div>
             </div>
             <div class="small">
@@ -83,7 +84,7 @@
                     <img src="./assets/img/cafetière.webp" alt="petit électroménager">
                 </div>
                 <div class="stabilo">
-                    <h3 id="petit"><span class="bold">Petit</span> électroménager</h3>
+                    <h3 id="petit"><span class="choc">Petit</span> électroménager</h3>
                 </div>
             </div>
         </div>
@@ -111,7 +112,7 @@
 
         <div class="advice-container">
             <div class="advice-left">
-                <img src="./assets/img/femme aspi.png" alt="femme heureuse passant l’aspirateur">
+                <img src="./assets/img/woman-sharp.png" alt="femme heureuse passant l’aspirateur">
                 <div class="advice-nav">
                     <div class="icon-circle" id="left-arrow">
                         <i class="fa-solid fa-chevron-left"></i>
@@ -146,6 +147,12 @@
     </section>
 
 <section class="manifest" id="manifest">
+    <div class="remind">
+        <div class="remind-stabilo">
+            <h3><span class="choc">10 000 kg</span> de déchets évités</h3>
+        </div>
+    </div>
+
     <div class="manifest-box">
         <div class="manifest-left">
             <h2>Pourquoi réparer’tou ?</h2>
@@ -158,12 +165,6 @@
         </div>
         <div class="manifest-right">
             <img src="./assets/img/atelier en cours.png" alt="personne avec un fer à souder">
-        </div>
-    </div>
-
-    <div class="remind">
-        <div class="remind-stabilo">
-            <h3><span class="bold">10 000 kg</span> de déchets évités</h3>
         </div>
     </div>
 </section>
@@ -220,7 +221,7 @@
         <a href="">CGU</a>
         <a href="">RGPD</a>
     </div>
-    <div class="links">
+    <div class="links" id="follow">
         <h4>Nous suivre</h4>
         <a href="">Contact</a>
         <a href="">Youtube</a>

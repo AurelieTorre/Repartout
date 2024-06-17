@@ -2,22 +2,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // navbar management
 
-    const header = document.getElementById('header');
-    let lastScrollTop = 0;
+    // const header = document.getElementById('header');
+    // let lastScrollTop = 0;
 
-    window.addEventListener('scroll', function() {
-        let scrollTop = window.scrollY;
-        // || document.documentElement.scrollTop;
+    // window.addEventListener('scroll', function() {
+    //     let scrollTop = window.scrollY;
+    //     // || document.documentElement.scrollTop;
 
-        if (scrollTop > lastScrollTop) {
-            // Scroll down
-            header.style.top = '-15vh';
-        } else {
-            // Scroll up
-            header.style.top = '0';
-        }
-        lastScrollTop = scrollTop;
-    });
+    //     if (scrollTop > lastScrollTop) {
+    //         // Scroll down
+    //         header.style.top = '-15vh';
+    //     } else {
+    //         // Scroll up
+    //         header.style.top = '0';
+    //     }
+    //     lastScrollTop = scrollTop;
+    // });
 
     // small circles management
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // colors the first circle when one land on the page
     firstCircle.classList.add("active");
-    firstCircle.style.background = "#06D6A0";
+    firstCircle.style.background = "#FFFFFF";
 
     circles.forEach(circle => {
         circle.addEventListener("click", function() {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Add the active class to the clicked circle
             this.classList.add("active");
-            this.style.background = "#06D6A0";
+            this.style.background = "#FFFFFF";
         });
     });
 
