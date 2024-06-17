@@ -1,12 +1,13 @@
 :root {
-    --white: #FFF5D0;
+    --white: #FFFFFF;
     --black: black;
     --background: #FFA068;
     --button: #06D6A0;
     --highlight: #202A48;
     --navbar: #FFBD95;
     --range: #2EC7DC;
-  }
+    --yellow: #FFF5D0;
+}
 
 @font-face {
 font-family: 'texte';
@@ -29,14 +30,13 @@ src: url(./assets/fonts/Jost-VariableFont_wght.ttf);
 * {
     margin: 0;
 }
-  
+
 body {
 background: var(--background);
 margin: 0 auto;
 color: var(--black);
 font-family: texte, sans-serif;
 font-weight: 500;
-max-width: 1440px;
 }
 
 .first-hide {
@@ -67,7 +67,7 @@ button:hover {
 
 header {
     background: var(--navbar);
-    width: 100%;
+    width: 100vw;
 }
 
 nav {
@@ -272,15 +272,15 @@ h2 {
     height: 48vh;
 }
 
- .big > img {
+.big > img {
     height: 40vh;
- }
+}
 
- .middle .stabilo {
+.middle .stabilo {
     transform: rotate(5deg);
- }
+}
 
- .range-container .stabilo {
+.range-container .stabilo {
     background: var(--highlight);
     color: var(--range);
     display: flex;
@@ -288,23 +288,23 @@ h2 {
     align-items: center;
     margin: 60px auto;
     height: 15vh;
- }
+}
 
- h3 {
+h3 {
     font-family: 'texte';
     text-align: center;
     font-size: 1.7rem;
     font-weight: 700;
     margin: 10px;
- }
+}
 
- #gros, #petit {
+#gros, #petit {
     transform: rotate(5deg);
- }
+}
 
- #moyen {
+#moyen {
     transform: rotate(-5deg);
- }
+}
 
 /*** logos de marques***/
 
@@ -801,9 +801,88 @@ footer a:hover {
         height: 100%;
     }
 
+    #coffee {
+        width: 90%;
+        height: 90%;
+    }
+
     .range-container .stabilo {
         width: 45vw;
         height: 14vw;
+    }
+
+    .logos {
+        gap: 3vw;
+        padding: 0;
+    }
+
+    .logos-container {
+        width: 120px;
+        height: 90px;
+    }
+
+    #fixed {
+        background: var(--background);
+        color: var(--highlight);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fixed .stabilo {
+        margin-top: 3vh;
+        width: 35vw;
+        height: 8vw;
+    }
+
+    #fixed .up {
+        margin-top: 1vh;
+    }
+
+    .advices {
+        background: var(--navbar);
+        margin-bottom: 0;
+    }
+
+    .advice-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .advice-left {
+        align-items: center;
+    }
+
+    .advice-left > img {
+        width: 70vw;
+    }
+
+    .advice-right {
+        width: 60vw;
+    }
+
+    .manifest {
+        background: var(--yellow);
+    }
+
+    .remind {
+        background: var(--background);
+        height: 17vh;
+    }
+
+    .remind-stabilo {
+        background: var(--background);
+        width: 40vw;
+        height: 15vh;
+    }
+
+    .manifest-box {
+        flex-direction: column;
+        align-items: center;
+    }.manifest-left > button {
+        align-self: center;
+        width: 21vw;
     }
 
 }

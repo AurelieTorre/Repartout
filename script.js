@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // colors the first circle when one land on the page
     firstCircle.classList.add("active");
-    firstCircle.style.background = "#FFFFFF";
+    firstCircle.style.background = "#FFF5D0";
 
     circles.forEach(circle => {
         circle.addEventListener("click", function() {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Add the active class to the clicked circle
             this.classList.add("active");
-            this.style.background = "#FFFFFF";
+            this.style.background = "#FFF5D0";
         });
     });
 
