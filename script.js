@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const activeCircle = document.querySelector(".small-circle.active");
             if (activeCircle) {
                 activeCircle.classList.remove("active");
-                activeCircle.style.background = "#112A46";
+                activeCircle.style.background = "#FFF5D0";
             }
 
             // Add the active class to the clicked circle
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 activeCircle.classList.remove("active");
                 activeCircle.style.background = "#112A46";
                 prevCircle.classList.add("active");
-                prevCircle.style.background = "#06D6A0";
+                prevCircle.style.background = "#FFF5D0";
             }
         }
     });
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 activeCircle.classList.remove("active");
                 activeCircle.style.background = "#112A46";
                 nextCircle.classList.add("active");
-                nextCircle.style.background = "#06D6A0";
+                nextCircle.style.background = "#FFF5D0";
             }
         }
     });
