@@ -952,7 +952,7 @@ footer a:hover {
     }
 
     .map-container > img {
-        content: url(/assets/img/carte-tablette.png);
+        content: url(./assets/img/carte-tablette.png);
         width: 92vw;
     }
 
