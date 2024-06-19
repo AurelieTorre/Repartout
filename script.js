@@ -2,22 +2,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // navbar management
 
-    // const header = document.getElementById('header');
-    // let lastScrollTop = 0;
+    const header = document.getElementById('header');
 
-    // window.addEventListener('scroll', function() {
-    //     let scrollTop = window.scrollY;
-    //     // || document.documentElement.scrollTop;
+    if (window.innerWidth > 1024) {
+        
+        let lastScrollTop = 0;
 
-    //     if (scrollTop > lastScrollTop) {
-    //         // Scroll down
-    //         header.style.top = '-15vh';
-    //     } else {
-    //         // Scroll up
-    //         header.style.top = '0';
-    //     }
-    //     lastScrollTop = scrollTop;
-    // });
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.scrollY;
+            // || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scroll down
+                header.style.top = '-20vh';
+            } else {
+                // Scroll up
+                header.style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+    }
 
     // small circles management
 

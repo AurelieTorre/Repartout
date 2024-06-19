@@ -39,7 +39,7 @@ font-family: texte, sans-serif;
 font-weight: 500;
 }
 
-.first-hide {
+.first-hide, #label-hide {
     display: none;
 }
 
@@ -67,6 +67,11 @@ button:hover {
 header {
     background: var(--navbar);
     width: 100vw;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    width: 99vw;
+    z-index: 10;
 }
 
 nav {
@@ -680,6 +685,12 @@ footer a:hover {
 
     /*** barre de navigation ***/
 
+    header {
+        position: static;
+        width: 99vw;
+        z-index: 0;
+    }
+    
     nav {
         padding: 5px 15px 1px;
         margin: 0 auto;
@@ -704,6 +715,7 @@ footer a:hover {
     .burger {
         background: var(--navbar);
         color: var(--black);
+        cursor: pointer;
     }
 
     .burger i {
@@ -984,4 +996,191 @@ footer a:hover {
     #follow {
         width: 20vw;
     }
+}
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        margin: 0;
+        padding: 0;
+        height:30vw;
+        gap: 10px;
+    }
+
+    nav > img {
+        width: 70vw;
+    }
+
+    #search {
+        display:none;
+    }
+
+    .hero-text > p {
+        display: none;
+    }
+
+    .hero-text > button {
+        width: 55vw;
+        height: 3.5rem;
+    }
+
+    .hero-text > img {
+        display: none;
+    }
+
+    .hero-right {
+        display: flex;
+        justify-content: space-between;
+        width: 85vw;
+        padding: 6% 6% 1%;
+    }
+    
+    #label-hide {
+        display: block;
+    }
+
+    #label-hide > img {
+        width: 27vw;
+    }
+
+    .hero-right > img {
+        display: block;
+        content: url(./assets/img/robert.png);
+        width: 50vw;
+    }
+
+    .quali {
+        display: none;
+    }
+
+    .stats {
+        padding: 20px 10px;
+    }
+
+    .stats .stabilo {
+        width: 85vw;
+        height: 22vw;
+    }
+
+    .ranges > h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .big, .middle, .small {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 130vw;
+    }
+
+    .range-container .img-container {
+        margin: 10px 0;
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .range-container .stabilo {
+        width: 88vw;
+        height: 30vw;
+    }
+
+    .logos-container:nth-child(3), .logos-container:nth-child(6), .logos-container:nth-child(7) {
+        display:none;
+    }
+
+    .logos-container > img {
+        max-width: 32vw;
+    }
+
+    #fixed {
+        display: none;
+    }
+
+    .advices {
+        background: var(--background);
+        margin-top: 3%;
+    }
+
+    .advices > h2 {
+        padding: 0;
+        text-align: center;
+    }
+
+    .advice-left > img {
+        display: none;
+    }
+
+    .advice-nav {
+        padding: 3px 0 10%;
+    }
+
+    .advice-right {
+        background: var(--background);
+        width: 88vw;
+    }
+
+    .advice-part:nth-child(2){
+        display: none;
+    }
+
+    .manifest {
+        display: none;
+    }
+
+    .services > h2 {
+        padding: 2% 0 5%;
+    }
+
+    .service-container {
+        gap: 4.5vw;
+    }
+
+    .card {
+        width: 65vw;
+    }
+
+    .map-container > img {
+        content: url(./assets/img/carte-tel.png);
+    }
+
+    .map-container > p {
+        padding: 2.5% 0;
+        font-size: 0.9rem;
+    }
+
+    .infos {
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    footer {
+        padding: 1%;
+    }
+
+    .links:nth-of-type(2) {
+        display: none;
+    }
+
+    .links {
+        width: 58vw;
+    }
+
+    .links > h4 {
+        padding-bottom: 2px;
+        margin: 2px 3px;
+    }
+
+    .links > a {
+        margin: 3px;
+    }
+
+    #follow {
+        width: 29vw;
+        align-items: flex-end;
+    }
+
+
+
 }
