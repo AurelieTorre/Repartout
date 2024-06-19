@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // burger menu
+
+    const burgerMenu = document.getElementById('burger-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
     // small circles management
 
     const circles = document.querySelectorAll(".small-circle");
