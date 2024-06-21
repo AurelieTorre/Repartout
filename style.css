@@ -1062,16 +1062,21 @@ footer a:hover {
         margin: 0;
         padding: 0;
         height:30lvw;
-        gap: 10px;
-        width: 95lvw;
+        gap: 0.5lvw;
+        width: 93lvw;
     }
 
     nav > img {
-        width: 70lvw;
+        width: 68lvw;
+        padding-left: 1lvw;
     }
 
     #search {
         display:none;
+    }
+
+    .burger-menu {
+        font-size: 16lvw;
     }
 
     .hero-text > p {
@@ -1114,6 +1119,7 @@ footer a:hover {
 
     .stats {
         padding: 20px 10px;
+        width: 90lvw;
     }
 
     .stats .stabilo {
@@ -1121,9 +1127,14 @@ footer a:hover {
         height: 22lvw;
     }
 
+    .ranges {
+        justify-content: center;
+        align-items: center;
+    }
+
     .ranges > h2 {
         text-align: center;
-        padding: 10px;
+        padding: 1lvw;
     }
 
     .big, .middle, .small {
@@ -1145,6 +1156,10 @@ footer a:hover {
         height: 30lvw;
     }
 
+    .logos {
+        width: 95lvw;
+    }
+
     .logos-container:nth-child(3), .logos-container:nth-child(6), .logos-container:nth-child(7) {
         display:none;
     }
@@ -1160,6 +1175,7 @@ footer a:hover {
     .advices {
         background: var(--background);
         margin-top: 3%;
+        width: 95lvw;
     }
 
     .advices > h2 {
@@ -1193,6 +1209,10 @@ footer a:hover {
         display: none;
     }
 
+    .services {
+        width: 95.5lvw;
+    }
+
     .services > h2 {
         padding: 2% 0 5%;
     }
@@ -1207,6 +1227,7 @@ footer a:hover {
 
     .map-container > img {
         content: url(./assets/img/carte-tel.png);
+        width: 88lvw;
     }
 
     .map-container > p {
@@ -1216,11 +1237,11 @@ footer a:hover {
 
     .infos {
         margin: 0;
-        padding-top: 1rem;
+        padding: 2lvw 0;;
     }
 
     footer {
-        padding: 1%;
+        padding: 2lvw;
     }
 
     .links:nth-of-type(2) {
