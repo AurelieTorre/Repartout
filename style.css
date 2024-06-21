@@ -29,6 +29,7 @@ src: url(./assets/fonts/Jost-VariableFont_wght.ttf);
 
 * {
     margin: 0;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -52,7 +53,7 @@ button {
     font-weight: 400;
     font-size: 1rem;
     height: 3rem;
-    width: 15vw;
+    width: 15lvw;
 }
 
 button:hover {
@@ -66,11 +67,10 @@ button:hover {
 
 header {
     background: var(--navbar);
-    width: 100vw;
+    width: 99lvw;
     position: fixed;
     top: 0;
     transition: top 0.3s;
-    width: 99vw;
     z-index: 10;
 }
 
@@ -79,15 +79,16 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 83vw;
-    height: 20vh;
+    padding: 0 1.5lvw;
+    width: 95lvw;
+    height: 20lvh;
     font-family: titres, sans-serif;
     font-size: 1rem;
     color: var(--highlight);
 }
 
 nav > img {
-    width: 19vw;
+    width: 19lvw;
 }
 
 nav > p> i {
@@ -129,7 +130,7 @@ nav > button:hover {
 
 .burger-menu {
     position: sticky;
-    top: 2.5vh;
+    top: 2.5lvh;
     font-size: 4.5rem;
     cursor: pointer;
     color: var(--black);
@@ -154,14 +155,14 @@ nav > button:hover {
 /****** hero ******/
 
 main {
-    margin-top: 15vh;
+    margin-top: 15lvh;
 }
 
 .hero {
     display: flex;
     justify-content: space-around;
     padding: 50px;
-    max-width: 100vw;
+    max-width: 100lvw;
 }
 
 .hero-left{
@@ -173,7 +174,7 @@ main {
 .hero-title {
     display: flex;
     justify-content: center;
-    padding: 0 0 10vh 0;
+    padding: 0 0 10lvh 0;
 }
 
 h1 {
@@ -188,7 +189,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 12vh;
+    gap: 12lvh;
 }
 
 .quali {
@@ -197,7 +198,7 @@ h1 {
     padding: 15px 15px 0px 15px;
     display: flex;
     text-align: left;
-    width: 35vw;
+    width: 35lvw;
 }
 
 .quali-left > p {
@@ -211,8 +212,8 @@ h4 {
 }
 
 #qualirepar {
-    width: 9vw;
-    height: 4.5vw;
+    width: 9lvw;
+    height: 4.5lvw;
     margin: auto;
     padding-bottom: 9px;
 }
@@ -224,7 +225,7 @@ h4 {
 }
 
 .hero-right > img {
-    width: 38.5vw;
+    width: 38.5lvw;
 }
 
 /*** les chiffres ***/
@@ -259,8 +260,8 @@ h4 {
 
 .stabilo {
     border: 1px solid var(--highlight);
-    height: 10vh;
-    width: 25vw;
+    height: 8lvw;
+    width: 22lvw;
     transform: rotate(5deg);
 }
 
@@ -281,33 +282,34 @@ h2 {
     font-family: titres;
     font-weight: 900;
     font-size: 1.875rem;
-    padding: 25px;
+    padding: 1.75lvw;
 }
 
 .range-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 90lvw;
 }
 
 .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    width: 50vh;
+    height: 25lvw;
+    width: 25lvw;
     background: var(--white);
-    margin: 40px;
+    margin: 3%;
     border-radius: 5px;
 }
 
 .img-container img {
-    height: 48vh;
+    width: 22lvw;
 }
 
-.big > img {
-    height: 40vh;
-}
+/* .big > img {
+    height: 40lvh;
+} */
 
 .middle .stabilo {
     transform: rotate(5deg);
@@ -319,8 +321,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px auto;
-    height: 15vh;
+    margin: 4lvw auto;
+    height: 15lvh;
 }
 
 h3 {
@@ -328,7 +330,7 @@ h3 {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 700;
-    margin: 10px;
+    margin: 1.6lvw;
 }
 
 #gros, #petit {
@@ -346,7 +348,7 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 1lvw;
     padding: 20px;
     background: var(--navbar);
 }
@@ -361,8 +363,8 @@ h3 {
 }
 
 .logos-container {
-    width: 15vw;
-    height: 6vw;
+    width: 15lvw;
+    height: 6lvw;
     display: flex;
     background: var(--white);
     justify-content: center;
@@ -371,7 +373,7 @@ h3 {
 }
 
 .logos-container > img {
-    max-width: 10vw;
+    max-width: 10lvw;
     border-radius: 15px;
 }
 
@@ -392,7 +394,7 @@ h3 {
 
 .advice-container {
     display: flex;
-    max-width: 80vw;
+    max-width: 80lvw;
     margin: auto;
 }
 
@@ -401,11 +403,11 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    width: 40vw;
+    width: 40lvw;
 }
 
 .advice-left > img {
-    width: 40vw;
+    width: 40lvw;
 }
 
 .advice-nav {
@@ -449,7 +451,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 40vw;
+    width: 40lvw;
     padding: 35px;
     position: relative;
 }
@@ -484,12 +486,12 @@ h3 {
 
 .remind {
     background: var(--navbar);
-    height: 34vh;
+    height: 34lvh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    width: 100vw;
+    width: 97lvw;
 }
 
 .remind-stabilo {
@@ -498,8 +500,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vw;
-    height: 28vh;
+    width: 50lvw;
+    height: 28lvh;
     transform: rotate(-5deg);
 }
 
@@ -522,9 +524,9 @@ h3 {
 .manifest-box {
     display: flex;
     justify-content: space-around;
-    width:85vw;
+    width:85lvw;
     margin: 30px auto 60px;
-    gap: 9.5vw;
+    gap: 9.5lvw;
 }
 
 .manifest-left {
@@ -532,7 +534,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 45vw;
+    width: 45lvw;
 }
 
 .manifest-left > h2 {
@@ -560,7 +562,7 @@ h3 {
 
 .manifest-right > img {
     margin-top: 30px;
-    width: 38vw;
+    width: 38lvw;
 }
 
 /*** nos services ***/
@@ -581,7 +583,7 @@ h3 {
 .service-container {
     display: flex;
     justify-content: space-around;
-    width: 75vw;
+    width: 75lvw;
 }
 
 .card {
@@ -589,14 +591,14 @@ h3 {
     color: var(--white);
     border-radius: 15px;
     padding: 25px 25px 45px 25px;
-    width: 17vw;
+    width: 17lvw;
 }
 
 .card > h4 {
     color: var(--button);
     font-weight: bold;
     font-size: 1.1rem;
-    margin: 4vh 0;
+    margin: 4lvh 0;
 }
 
 .card a {
@@ -611,18 +613,18 @@ h3 {
 /*** localisation ***/
 
 .localisation {
-    width: 85vw;
+    width: 85lvw;
 }
 
 .localisation > h4 {
-    margin: 10vh 0 5vh;
+    margin: 10lvh 0 5lvh;
     font-family: titres;
     font-weight: bold;
     font-size: 1.4rem;
 }
 
 .localisation img {
-    width: 85vw;
+    width: 85lvw;
     border-radius: 15px;
 }
 
@@ -661,8 +663,8 @@ h3 {
 }
 
 .infos {
-    margin: 6vh 0 8vh 7vw;
-    width: 95vw;
+    margin: 6lvh 0 8lvh 7lvw;
+    width: 95lvw;
 }
 
 /****** footer ******/
@@ -671,7 +673,7 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-    padding: 15vh 15vw;
+    padding: 15lvh 15lvw;
 }
 
 footer h4 {
@@ -694,11 +696,11 @@ footer a:hover {
 .links {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 20lvw;
 }
 
 #follow {
-    width: 12vw;
+    width: 12lvw;
 }
 
 @media screen and (max-width: 1024px) {
@@ -715,7 +717,7 @@ footer a:hover {
 
     header {
         position: static;
-        width: 99vw;
+        width: 99lvw;
         z-index: 0;
     }
     
@@ -723,17 +725,17 @@ footer a:hover {
         padding: 5px 15px 1px;
         margin: 0 auto;
         gap: 20px;
-        width: 85vw;    
+        width: 85lvw;
     }
 
     nav > img {
-        width: 38vw;
+        width: 38lvw;
         padding-top: 5px;
     }
 
     #search {
         padding: 7px 7px 7px 0;
-        width: 38vw;
+        width: 38lvw;
     }
 
     #search > i {
@@ -750,7 +752,7 @@ footer a:hover {
     .nav-links {
         display: none; /* Cacher les liens de navigation par défaut */
         flex-direction: column;
-        width: 30vw;
+        width: 30lvw;
     }
 
     .nav-links li {
@@ -779,29 +781,29 @@ footer a:hover {
     }
 
     .hero-title {
-        width: 40vw;
+        width: 40lvw;
         margin: 0 auto;
         text-shadow: 0px 4px 4px #b35d2f;
-        padding-bottom: 5vw;
+        padding-bottom: 5lvw;
     }
 
     .hero-text {
-        gap: 2vw;
+        gap: 2lvw;
     }
 
     .hero-text > button {
         order: -1;
         margin: 0 auto;
-        width: 28vw;
+        width: 28lvw;
     }
 
     .hero-text > p {
-        margin: 1vw auto 4vw;
+        margin: 1lvw auto 4lvw;
         font-size: 1.1rem;
     }
 
     .hero-text > img {
-        width: 75vw;
+        width: 75lvw;
         margin: 0 auto;
     }
 
@@ -809,7 +811,7 @@ footer a:hover {
         margin: 0;
         padding: 30px 10px 10px 80px;
         border-radius: 0;
-        width: 86vw;
+        width: 91lvw;
     }
 
     .quali a {
@@ -817,8 +819,8 @@ footer a:hover {
     }
 
     #qualirepar {
-        width: 18vw;
-        height: 10vw;
+        width: 18lvw;
+        height: 10lvw;
         margin: 0 30px 0 20px;
         padding-bottom: 9px;
     }
@@ -827,12 +829,12 @@ footer a:hover {
 
     .stats {
         justify-content: center;
-        width: 91vw;
+        width: 94lvw;
     }
 
     .range-container .stabilo {
-        width: 42.5vw;
-        height: 10vw;
+        width: 42.5lvw;
+        height: 10lvw;
         margin: 10px auto;
     }
 
@@ -848,11 +850,14 @@ footer a:hover {
 
     .range-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .img-container {
-        width: 40vw;
-        height: 40vw;
+ 
+        width: 40lvw;
+        height: 40lvw;
         border-radius: 0;
     }
 
@@ -872,18 +877,20 @@ footer a:hover {
     }
 
     .range-container .stabilo {
-        width: 45vw;
-        height: 14vw;
+        width: 45lvw;
+        height: 14lvw;
+        margin: 3lvw auto;
     }
 
     .logos {
-        gap: 3vw;
+        gap: 3lvw;
         padding: 0;
+        width:99lvw;
     }
 
     .logos-container {
-        width: 120px;
-        height: 90px;
+        width: 12lvw;
+        height: 9lvw;
     }
 
     #fixed {
@@ -895,23 +902,25 @@ footer a:hover {
     }
 
     #fixed .stabilo {
-        margin-top: 3vh;
-        width: 35vw;
-        height: 10vw;
+        margin-top: 3lvh;
+        width: 35lvw;
+        height: 10lvw;
     }
 
     #fixed .up {
-        margin-top: 1vh;
+        margin-top: 1lvh;
     }
 
     .advices {
         background: var(--navbar);
         margin-bottom: 0;
         margin-top: 17px;
+        width: 99lvw;
     }
 
     .advices > h2 {
-        margin-bottom: 10px;
+        margin: 3lvw 1lvw;
+        margin-left: 3lvw;
     }
 
     .advice-container {
@@ -925,33 +934,35 @@ footer a:hover {
     }
 
     .advice-left > img {
-        width: 80vw;
+        width: 80lvw;
         content: url(./assets/img/Image-femme-aspi.png);
     }
 
     .advice-right {
-        width: 80vw;
+        width: 80lvw;
         padding: 10px;
     }
 
     .advice-right::after {
-        width: 78vw;
+        width: 78lvw;
         left: 3%;
     }
 
     .manifest {
         background: var(--yellow);
+        width: 99lvw;
     }
 
     .remind {
         background: var(--background);
-        height: 22vh;
+        height: 22lvh;
+        width: 100%;
     }
 
     .remind-stabilo {
         background: var(--background);
-        width: 40vw;
-        height: 20vh;
+        width: 40lvw;
+        height: 20lvh;
     }
 
     .manifest-box {
@@ -961,44 +972,48 @@ footer a:hover {
     }
 
     .manifest-left {
-        width: 85vw;
+        width: 85lvw;
     }
     
     .manifest-left > button {
         align-self: center;
-        width: 30vw;
+        width: 30lvw;
         margin: 0 auto;
     }
 
     .manifest-right > img {
         margin-top: 15px;
         content: url(./assets/img/Image-atelier.png);
-        width: 87vw;
+        width: 87lvw;
     }
 
     #certif {
         background: var(--background);
         color: var(--highlight);
-        width: 98vw;
-        height: 15vw;
+        width: 99lvw;
+        height: 15lvw;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     #certif .stabilo {
-        width: 45vw;
+        width: 45lvw;
         font-family: autre;
+    }
+
+    .services {
+        width: 99lvw;
     }
 
     .service-container {
         flex-direction: column;
         align-items: center;
-        gap: 2vw;
+        gap: 2lvw;
     }
 
     .card {
-        width: 50vw;
+        width: 50lvw;
     }
 
     .localisation > h4 {
@@ -1008,7 +1023,7 @@ footer a:hover {
 
     .map-container > img {
         content: url(./assets/img/carte-tablette.png);
-        width: 92vw;
+        width: 92lvw;
     }
 
     .map-container > p {
@@ -1016,11 +1031,11 @@ footer a:hover {
     }
 
     .infos {
-        margin: 13px 0 5vw 30vw;
+        margin: 13px 0 5lvw 30lvw;
     }
 
     footer {
-        padding: 10px 10vw;
+        padding: 10px 10lvw;
         justify-content: space-between;
     }
 
@@ -1033,11 +1048,11 @@ footer a:hover {
     }
 
     .links {
-        width: 27vw;
+        width: 27lvw;
     }
 
     #follow {
-        width: 20vw;
+        width: 20lvw;
     }
 }
 
@@ -1046,13 +1061,13 @@ footer a:hover {
     nav {
         margin: 0;
         padding: 0;
-        height:30vw;
+        height:30lvw;
         gap: 10px;
-        width: 95vw;
+        width: 95lvw;
     }
 
     nav > img {
-        width: 70vw;
+        width: 70lvw;
     }
 
     #search {
@@ -1064,7 +1079,7 @@ footer a:hover {
     }
 
     .hero-text > button {
-        width: 55vw;
+        width: 55lvw;
         height: 3.5rem;
     }
 
@@ -1075,7 +1090,7 @@ footer a:hover {
     .hero-right {
         display: flex;
         justify-content: space-between;
-        width: 85vw;
+        width: 85lvw;
         padding: 6% 6% 1%;
     }
     
@@ -1084,13 +1099,13 @@ footer a:hover {
     }
 
     #label-hide > img {
-        width: 27vw;
+        width: 27lvw;
     }
 
     .hero-right > img {
         display: block;
         content: url(./assets/img/robert.png);
-        width: 50vw;
+        width: 50lvw;
     }
 
     .quali {
@@ -1102,8 +1117,8 @@ footer a:hover {
     }
 
     .stats .stabilo {
-        width: 85vw;
-        height: 22vw;
+        width: 85lvw;
+        height: 22lvw;
     }
 
     .ranges > h2 {
@@ -1116,18 +1131,18 @@ footer a:hover {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 130vw;
+        height: 130lvw;
     }
 
     .range-container .img-container {
         margin: 10px 0;
-        width: 80vw;
-        height: 80vw;
+        width: 80lvw;
+        height: 80lvw;
     }
 
     .range-container .stabilo {
-        width: 88vw;
-        height: 30vw;
+        width: 88lvw;
+        height: 30lvw;
     }
 
     .logos-container:nth-child(3), .logos-container:nth-child(6), .logos-container:nth-child(7) {
@@ -1162,7 +1177,7 @@ footer a:hover {
 
     .advice-right {
         background: var(--background);
-        width: 88vw;
+        width: 88lvw;
     }
 
     .advice-part:nth-child(2){
@@ -1183,11 +1198,11 @@ footer a:hover {
     }
 
     .service-container {
-        gap: 4.5vw;
+        gap: 4.5lvw;
     }
 
     .card {
-        width: 65vw;
+        width: 65lvw;
     }
 
     .map-container > img {
@@ -1213,7 +1228,7 @@ footer a:hover {
     }
 
     .links {
-        width: 58vw;
+        width: 58lvw;
     }
 
     .links > h4 {
@@ -1226,10 +1241,9 @@ footer a:hover {
     }
 
     #follow {
-        width: 29vw;
+        width: 29lvw;
         align-items: flex-end;
     }
-
 
 
 }
