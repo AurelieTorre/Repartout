@@ -1106,12 +1106,16 @@ footer a:hover {
 
 @media screen and (max-width: 600px) {
 
+    header {
+        width: 100%;
+    }
+
     nav {
         margin: 0;
         padding: 0;
         height: 30lvw;
         gap: 0.5lvw;
-        width: 93lvw;
+        width: 97lvw;
     }
 
     nav>img {
@@ -1167,7 +1171,7 @@ footer a:hover {
 
     .stats {
         padding: 20px 10px;
-        width: 95lvw;
+        width: 100%;
     }
 
     .stats .stabilo {
@@ -1207,7 +1211,7 @@ footer a:hover {
     }
 
     .logos {
-        width: 98lvw;
+        width: 100%;
     }
 
     .logos-container:nth-child(3),
@@ -1262,7 +1266,7 @@ footer a:hover {
     }
 
     .services {
-        width: 97.5lvw;
+        width: 100%;
     }
 
     .services>h2 {
