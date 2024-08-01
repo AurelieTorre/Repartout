@@ -41,6 +41,7 @@ body {
     font-family: texte, sans-serif;
     font-weight: 500;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .first-hide,
